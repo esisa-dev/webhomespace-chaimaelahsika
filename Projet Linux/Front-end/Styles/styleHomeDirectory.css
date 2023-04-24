@@ -1,0 +1,34 @@
+body{
+  background:url(https://www.numerama.com/wp-content/uploads/2019/06/ubuntu-linux.jpg) center;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* text-align: center; */
+    padding: 60px;
+    margin-bottom: 10px;
+  }
+  
+  th {
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+    background-color: #eee;
+  }
+  
+  td {
+    padding: 10px;
+  }
+  
+  tr:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+  
+  tr:hover {
+    background-color: #ddd;
+  }
+  

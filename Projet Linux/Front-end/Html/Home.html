@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/styleHome.css">
+	<title>Page de connexion</title>
+</head>
+<body>
+	<h1>Page de connexion</h1>
+	<form method="POST" action="{{ url_for('login') }}">
+		<label for="username">Nom d'utilisateur:</label>
+		<input type="text" name="username" id="username"><br><br>
+		<label for="password">Mot de passe:</label>
+		<input type="password" name="password" id="password"><br><br>
+		<input type="submit" value="Se connecter">
+	</form>
+	<br>
+	<form method="POST" action="{{ url_for('logout') }}">
+		<input type="submit" value="Se déconnecter">
+	</form>
+	<br>
+	<form method="GET" action="{{ url_for('home') }}">
+		<input type="submit" value="Annuler">
+	</form>
+
+</body>
+</html>

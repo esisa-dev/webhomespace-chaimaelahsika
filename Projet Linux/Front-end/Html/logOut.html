@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/styleLogOut.css">
+    <title>Page de Déconnexion</title>
+</head>
+<body>
+    <h1>Page De LOG OUT</h1>
+    <button type="button" onclick="logout()">
+      Déconnexion <span>&#10132;</span>
+    </button>
+    <script>
+      function logout() {
+        document.cookie = "nom_du_cookie=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+        
+      }
+    </script>
+</body>
+</html>
